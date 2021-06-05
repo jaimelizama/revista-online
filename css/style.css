@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "navbar" "main" "sidebar" "newsletter" "footer";
+}
+
+.grid-container > * {
+  text-align: center;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.newsletter {
+  grid-area: newsletter;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-areas: "navbar" "main" "newsletter" "footer";
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-areas: "navbar navbar navbar navbar" "main main main sidebar" "newsletter newsletter newsletter newsletter" "footer footer footer footer";
+  }
+}
+.navbar {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.navbar .nav {
+  display: inline-block;
+  width: 70%;
+  text-align: right;
+}
+.navbar .nav .list {
+  list-style-type: none;
+}
+.navbar .nav li {
+  display: inline-block;
+}
+.navbar .nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar .nav .input-menu {
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .list__us {
+    display: none;
+  }
+}
+.news {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 20%;
+}
+
+.news .news__layout {
+  display: inline-block;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .news {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 900px) {
+  .news {
+    grid-template-columns: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .news .news__layout {
+    text-align: center;
+  }
+
+  .news__image {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.sidebar__list {
+  width: 70%;
+  float: right;
+  margin-right: 15%;
+  text-align: left;
+}
+
+.sidebar__us {
+  width: 70%;
+  border-bottom: 1px solid gray;
+  left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
