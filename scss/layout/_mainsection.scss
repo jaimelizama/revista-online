@@ -45,15 +45,12 @@
     grid-template-columns: auto;
     margin-left: 5%;
     margin-right: 5%;
-    .news__layout {
-      text-align: center;
+    .news__image {
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
-  }
-  .news__image {
-    height: 200px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }

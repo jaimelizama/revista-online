@@ -133,11 +133,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
   }
-  .news .news__layout {
-    text-align: center;
-  }
-
-  .news__image {
+  .news .news__image {
     height: 200px;
     width: 100%;
     background-size: cover;
