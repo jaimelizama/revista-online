@@ -1,6 +1,8 @@
 .grid-container {
+  width: 960px;
+  margin: 0 auto;
   display: grid;
-  grid-template-areas: "navbar" "main" "sidebar" "newsletter" "footer";
+  grid-template-areas: "navbar" "main" "sidebar" "footer";
 }
 
 .grid-container > * {
@@ -19,17 +21,14 @@
   grid-area: sidebar;
 }
 
-.newsletter {
-  grid-area: newsletter;
-}
-
 .footer {
   grid-area: footer;
 }
 
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-areas: "navbar" "main" "newsletter" "footer";
+    width: 100%;
+    grid-template-areas: "navbar" "main" "footer";
   }
   .sidebar {
     display: none;
@@ -41,7 +40,6 @@
     grid-template-areas:
       "navbar navbar navbar navbar"
       "main main main sidebar"
-      "newsletter newsletter newsletter newsletter"
       "footer footer footer footer";
   }
 }

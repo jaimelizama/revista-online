@@ -1,12 +1,36 @@
 .sidebar__list {
-  width: 70%;
+  width: 100%;
   float: right;
-  margin-right: 15%;
+  margin-right: 0%;
   text-align: left;
 }
 
 .sidebar__us {
-  width: 70%;
+  width: 100%;
   border-bottom: 1px solid gray;
   left: 0;
+}
+
+.sidebar__tags {
+  border-bottom: 1px solid gray;
+  ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  ul li {
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+    display: inline-block;
+  }
+}
+
+.sidebar__news {
+  margin-bottom: 50px;
+  img {
+    width: 220px;
+    height: 200px;
+  }
 }

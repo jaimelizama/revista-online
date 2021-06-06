@@ -1,7 +1,10 @@
 .news {
   display: grid;
+  grid-template-columns: 100vh;
+  grid-template-columns: 100vw;
   grid-template-columns: auto auto auto;
-  margin-left: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .news .news__layout {
@@ -15,7 +18,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .news {
     grid-template-columns: auto;
     margin-left: 5%;
